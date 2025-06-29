@@ -1,0 +1,211 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background: #000;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo span {
+  color: #00f0f0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a.activo {
+  color: #00f0f0;
+}
+
+.search-bar input {
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: none;
+}
+
+main {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.carousel img {
+  max-width: 300px;
+  height: auto;
+}
+
+.carousel button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Añade esto en la sección de botones */
+.connect-btn {
+  background: black;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.connect-btn:hover {
+  background: #00f0f0; /* Cambiado a cian para consistencia */
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 3rem 0;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-columna {
+  flex: 1;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-centro {
+  align-items: center;
+}
+
+.footer h4 {
+  color: white;
+  border-bottom: 3px solid #00FFFF;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #00FFFF;
+}
+
+.footer-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.footer-logo span {
+  color: #00FFFF;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
+}
+
+.footer-team-logo {
+  max-width: 120px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .footer-contenido {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-columna {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousel img {
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
